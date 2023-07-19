@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 300;
+    color: #000000;
+    font-weight: 300;
+}
+
+header{
+    width: 1100px;
+    
+    margin: auto;/*importante como centrar un contenedor*/
+    background-color: rgb(53, 53, 53) ;
+    border-radius: 25px;
+   /*  background: rgb(46,44,217);
+    background: linear-gradient(241deg, rgba(46,44,217,1) 0%, rgba(45,253,149,1) 100%); */
+    display: flex;/*hace que los elementos de header se pongan uno al lado del otro*/
+
+    justify-content: space-between;
+
+    height: 100px;
+    /* line-height: 70px; */
+    align-items: center;
+
+    border-color: #000000;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-top-style: ridge;
+    
+}
+
+   header a{
+    padding: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 0 0 1px black
+   }
+
+   
+    nav a {
+        padding: 14px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: large;
+        font-weight: bold;
+    }
+
+
+main{
+    min-height: 600px;/*es la altura minima que tendra el main, si el contenido exede esto el main terminara creciendo*/
+    width: 1100px;
+    margin: auto;
+    
+}
+
+    #contenedorPrincipalIndex{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    top: 100px;
+    }
+
+     #contenedorFotoIndex{
+        height: 400px;
+        width: 400px;
+        background: rgb(46,44,217);
+        background: linear-gradient(270deg, rgba(46,44,217,1) 0%, rgba(45,253,149,1) 100%);
+        overflow: hidden;
+        border-radius: 100px;
+        border-style: ridge;
+        border-color: #000000;
+       
+        
+    }
+     
+    #contenedorFotoIndex img{
+        width: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -15px;
+
+        
+    }
+
+    #contenedorTextoIndex{
+        height: 400px;
+        width: 680px;
+        background: rgb(46,44,217);
+        background: linear-gradient(90deg, rgba(46,44,217,1) 0%, rgba(45,253,149,1) 100%);
+        border-radius: 100px;
+        border-style: ridge;
+        border-color: #000000;
+    }
+
+    #contenedorTextoIndex h1{
+        color: #ffffff;
+        font-size: xx-large;
+        font-weight: bold;
+        margin: 40px;
+        text-shadow: 0 0 1px black
+    /*  text-align: end; */
+        
+    }
+
+    #contenedorTextoIndex p{
+        color: #ffffff;
+        font-size: large;
+        font-weight: bold;
+        margin: 40px;
+        text-shadow: 0 0 1px black
+    }
+
+    .contenedorImagenesHabilidades{
+        width: 1000px;/*hago el contenedorm menos ancho para que esten mas juntas las tarjetas*/
+        height: 500px;
+        margin: auto;
+        display: flex;/* pone los article unos al lado de otro */
+        justify-content: space-between;
+        position: relative;
+        top: 50px;
+    }
+    
+   /*  .contenedorImagenesHabilidades article{
+        width: 250px;
+        height: 400px;
+        background: rgb(46,44,217);
+        background: linear-gradient(0deg, rgba(46,44,217,1) 0%, rgba(45,253,149,1) 100%);
+        border-radius: 20px;
+        overflow: hidden;
+
+        border-style: inset;
+        border-color: #000000;
+    } */
+
+
+    .card
+    {
+        width: 250px;
+        height: 400px;
+        background: rgb(46,44,217);
+        background: linear-gradient(0deg, rgba(46,44,217,1) 0%, rgba(45,253,149,1) 100%);
+        border-radius: 20px;
+        overflow: hidden;
+
+        border-style: inset;
+        border-color: #000000;
+
+    }
+
+    
+    .contenedorImagenesHabilidades article img{
+       /*  background-size: cover; */
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-title{
+        
+    color: white;
+      text-align: justify;
+      padding: 15px 20px;
+    }
+    
+    .card-title p{
+        padding-top: 10px;
+    }
+
+
+    #formularioContacto{
+        position: relative;
+        top: 75px;
+        width: 600px;
+        height: 425px;
+        margin: auto;
+        background: rgb(46,44,217);
+        background: linear-gradient(90deg, rgba(46,44,217,1) 0%, rgba(45,253,149,1) 100%);
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        border-style: ridge;
+        border-color: #000000;
+    }
+
+#formularioContacto form{
+   width: 600px;
+   position: relative;
+   left: 25px;
+   top: 10px;
+   
+}
+
+#formularioContacto form button,
+#formularioContacto form input,
+#formularioContacto form textarea{
+    width: 550px;
+    padding: 15px;
+    border: none;
+   
+}
+
+footer{
+    min-height: 160px;
+    width: 1100px;
+    margin: auto;
+
+    background-color: rgb(53, 53, 53) ;
+    border-radius: 25px;
+    /* background: rgb(46,44,217);
+    background: linear-gradient(241deg, rgba(46,44,217,1) 0%, rgba(45,253,149,1) 100%);
+ */
+    border-color: #000000;
+    border-top-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-bottom-style: ridge;
+  
+}
+
+#items{
+    width: 1100px;
+    margin: auto;
+    min-height: 160px;
+   
+
+    display: flex;
+    justify-content: space-between;
+    /* padding: 30px; */
+    align-items: center;/*PARA CENTRAR VERTICALMENTE LOS ITEMS*/
+    
+}
+    #items a{/*todos los a dentro de items*/
+        text-decoration: none;
+    }
+
+    #redes a img{
+        width: 30px;
+        margin: 6px;
+        
+    }
+
+
+#textosFooter{
+    display: flex;
+    color: white;
+    
+    
+}
+
+#textosFooter li{
+    list-style-type: none;/* sirve para borrar los puntitos de la lista */
+    margin-bottom: 8px;
+}
+
+#textosFooter ul{
+    margin-left: 60px;/* margenes izquierdos de las listas */
+}
+
+.tituloLista{/*SE PONE . PORQUE ES UNA CLASE*/
+font-weight: bold;
+margin-bottom: 12px !important;/* EL IMPORTANT SIRVE POR SI DOS CONFIGURACIONES ENTRAN EN CONFLICO INDICA A CUAL SE LE DEBE DAR BOLA */
+}
